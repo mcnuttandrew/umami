@@ -1,0 +1,1 @@
+delete from pageview where ((website_id = 2 and created_at < now()::date - 5) or (website_id != 2 and created_at < now()::date - 30)) and website_id != 4
